@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 .rightBtn {
   width: 0.2rem;
   height: 0.26rem;
@@ -189,6 +194,7 @@
 
 #index {
   overflow-x: hidden;
+  padding-bottom: 1rem;
 }
 
 #index .pad {
@@ -222,6 +228,7 @@
 
 .artDetails {
   overflow-x: hidden;
+  padding-bottom: 1rem;
 }
 
 .artDetails .today {
