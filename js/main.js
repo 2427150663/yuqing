@@ -34,6 +34,19 @@ function validation() {
     }
 }
 
+function today() {
+    let str = "";
+    var d = new Date();
+    //星期数组
+    var xingqi = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+    //一周的第几天
+    var day = d.getDay();
+    var dateMoney = new Date().toLocaleDateString();
+    dateMoney = dateMoney.replace(/\//g, ".");
+    str = "今天" + " " + dateMoney + " " + xingqi[day];
+    return str;
+}
+
 //账户激活
 class activation {
     constructor() {
@@ -94,6 +107,7 @@ class indexlist {
     init() {
         if (this.optList) {
             validation();
+            this.optList.querySelector(".today").innerHTML = today();
             this.bindEvent();
         }
     }
@@ -131,6 +145,7 @@ class article {
     init() {
         if (this.article) {
             validation();
+            this.article.querySelector(".today").innerHTML = today();
         }
     }
 }
@@ -142,6 +157,7 @@ class details {
     init() {
         if (this.details) {
             validation();
+            this.details.querySelector(".today").innerHTML = today();
         }
     }
 }
