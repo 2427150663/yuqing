@@ -1,0 +1,387 @@
+* {
+    margin         : 0;
+    padding        : 0;
+    list-style     : none;
+    text-decoration: none;
+}
+
+.rightBtn {
+    width          : 0.2rem;
+    height         : 0.26rem;
+    display        : inline-block;
+    background     : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAACIklEQVQ4T5XUTWgTQRQH8P+b3dZQUUGlehDUQxERCSZbbGOSTcQS8NiWQLWKlF5UxJsXUfYievOi4AeooETQguKhFqx21+yGYNz0lFNERUFQSjEUbaLuPtkkFT+aD99x5v+bnX07s2Sa5qpwOLyA/ywyLPsOM7/Wp4OappHbrifdepkCYwSgqU7hOxgK7ZhvB5ORzo0x0TUAEojeCiEPRfv9+VaYvICenR3ADycFYD3AZRLScTUUuNEMV6FXT638Zol5AmClOkC4/rV7zYn9PT2V5Rb4Bb3JyWJxRdfH0iUA41VLlBMuD0ciyru/8R9wadLI5MfYdS4D5AMwB/CBWLj3ye94WegFnqXtoBCYAPMWAA5AZ9U9gfNExLU3aVKZTGFtxVlMESFRC9Ojbz4+PKAopabQC2sai9g+WyOi08wsQFR0qBJvCWvbzvsF3CkQNgJwSUiRljBt5Q+57F5hoAvAPCQxGusPPG4I7xUKnRs+ly8y87F6G2bJcYZUdfebhs2Zmcluog75PoC+OrrF39cdjce3lpd6+c8TDcvey8x3AXQDqJCgk2ooeLXpAdAt+xSYzwGQwXgvmIej0d4XDY/cZDa7eqXbcZNdHvRCAjTt+HgkrihzjT4zGYa9nSV+AGAbAAbEhU8fXp1JJpNO09uhm7nbAI2CUGIHR+JR5WGru1jtav0PsJNkaVDt21VsB1Xh84ydWFyQzUTC/6Vd5OV+AnNUyAvU9spCAAAAAElFTkSuQmCC)no-repeat center center;
+    background-size: 100% 100%;
+    transform      : rotate(0deg);
+    transition     : all 0.3s;
+}
+
+.turn {
+    transition: all 0.3s;
+    transform : rotate(90deg);
+}
+
+@font-face {
+    font-family: "FZXBSJW--GB1";
+    src        : url(font/fzcthj.ttf);
+}
+
+@font-face {
+    font-family: "FZFSK--GBK1";
+    src        : url(font/GBK.ttf);
+}
+
+@mixin size($wid, $het) {
+    width : $wid/100;
+    height: $het/100;
+}
+
+%cen {
+    display    : flex;
+    align-items: center;
+}
+
+%remCon {
+    width : 7.5rem;
+    margin: auto;
+}
+
+%f-weight {
+    font-weight: 400;
+}
+
+%hover-filter {
+    filter: brightness(1.1);
+}
+
+.bgwhite {
+    background: white !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+#activation {
+    @extend %remCon;
+    overflow-x: hidden;
+
+    header {
+        @include size(750rem, 320rem);
+        background     : url("../img/bg.png")no-repeat;
+        background-size: 100% auto;
+        z-index        : 100;
+        font-size      : 0.4rem;
+        font-weight    : 550;
+        color          : rgba(255, 255, 255, 1);
+        font-family    : PingFangSC;
+        @extend %cen;
+        justify-content: center;
+        margin-bottom  : 0.56rem;
+
+        div {
+            height        : 1.12rem;
+            line-height   : 0.56rem;
+            letter-spacing: 0.04rem;
+        }
+    }
+
+    .section {
+        padding   : 0 0.44rem;
+        width     : 7.5rem;
+        box-sizing: border-box;
+
+        .ipt {
+            .top {
+                @include size(750rem, 50rem);
+                font-size: 0.24rem;
+                color    : rgba(192, 196, 204, 1);
+                @extend %f-weight;
+                line-height : 0.5rem;
+                padding-left: 0.16rem;
+            }
+
+            .btm {
+                @include size(662rem, 88rem);
+                margin-bottom: 0.4rem;
+                position     : relative;
+                box-sizing   : border-box;
+
+                .prompt {
+                    font-size   : 0.24rem;
+                    color       : rgba(245, 108, 108, 1);
+                    padding-left: 0.16rem;
+                    line-height : 0.33rem;
+                }
+
+                input {
+                    @include size(662rem, 88rem);
+                    padding-left: 0.2rem;
+                    display     : block;
+                    border      : 0.02rem solid rgba(152, 159, 195, 0.4);
+                    outline     : none;
+                    color       : rgba(48, 49, 50, 1);
+                    font-size   : 0.3rem;
+                    box-sizing  : border-box;
+                }
+
+                input:focus {
+
+                    border: 0.02rem solid rgba(56, 129, 234, 1);
+                }
+
+                span.iconfont {
+                    font-size: 0.24rem;
+                    color    : #989FC3;
+                    position : absolute;
+                    top      : 0.44rem;
+                    left     : 0.35rem;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+
+            .userActivaion {
+                @extend %cen;
+
+                input {
+                    @include size(194rem, 88rem);
+                    text-align: center;
+                    padding   : 0px;
+                }
+
+                div {
+                    @include size(20rem, 2rem);
+                    background: rgba(152, 159, 195, 0.4);
+                    margin    : 0 0.1rem;
+                }
+            }
+        }
+
+        .login {
+            @include size(288rem, 88rem);
+            background   : linear-gradient(92deg, rgba(255, 124, 113, 1) 0%, rgba(253, 4, 0, 1) 100%);
+            border-radius: 0.04rem;
+            margin       : auto;
+            font-size    : 0.32rem;
+            @extend %f-weight;
+            line-height   : 0.88rem;
+            text-align    : center;
+            color         : rgba(255, 255, 255, 1);
+            letter-spacing: 2px;
+            cursor        : pointer;
+            margin-top    : 0.12rem;
+        }
+
+        .login:hover {
+            @extend %hover-filter;
+        }
+
+        .activaion {
+            margin-top   : 0.2rem;
+            margin-bottom: 0.2rem;
+
+            // text-align   : center;
+            div {
+                @include size(215rem, 37rem);
+                margin: auto;
+                @extend %cen;
+                justify-content: center;
+                color          : rgba(152, 159, 195, 1);
+                font-size      : 0.26rem;
+            }
+
+            a {
+                color: rgba(56, 129, 234, 1);
+            }
+        }
+    }
+
+}
+
+.borNone {
+    border: 0px !important;
+}
+
+#list {
+    @extend %remCon;
+    overflow-x: hidden;
+
+    .pad {
+        padding: 0 0.24rem;
+    }
+
+    #day .dlie:first-child {
+        .het {
+            border: 0px;
+        }
+    }
+
+    .het {
+        font-size  : 0.32rem;
+        font-family: PingFangSC;
+        font-weight: 400;
+        color      : rgba(51, 51, 51, 1);
+        height     : 0.88rem;
+        @extend %cen;
+        justify-content: space-between;
+        border-top     : 0.01rem solid rgba(228, 231, 237, 1);
+        box-sizing : border-box;
+    }
+
+    .today {
+        font-size : 0.28rem;
+        color     : white;
+        background: rgba(253, 4, 0, 1);
+        width     : 7.5rem;
+        box-sizing: border-box;
+        padding   : 0 0.24rem;
+        height    : 0.88rem;
+        @extend %cen;
+    }
+}
+
+.artDetails {
+    @extend %remCon;
+    overflow-x: hidden;
+
+    .today {
+        font-size : 0.28rem;
+        color     : white;
+        background: rgba(253, 4, 0, 1);
+        width     : 7.5rem;
+        box-sizing: border-box;
+        padding   : 0 0.24rem;
+        height    : 0.88rem;
+        @extend %cen;
+    }
+
+    .con {
+        padding       : 0 0.24rem;
+        padding-bottom: 0.2rem;
+
+        h1 {
+            font-size  : 1.12rem;
+            line-height: 1.31rem;
+            font-family: "FZXBSJW--GB1";
+            font-weight: normal;
+            color      : rgba(253, 4, 0, 1);
+            margin     : 0.32rem auto;
+            text-align : center;
+        }
+
+        .title {
+            border-bottom: 0.03rem solid rgba(253, 4, 0, 1);
+            @extend %cen;
+            font-size      : 0.32rem;
+            height         : 0.62rem;
+            justify-content: space-between;
+            padding        : 0px 0.28rem;
+            font-family    : "FZFSK--GBK1";
+            font-weight    : normal;
+            color          : rgba(0, 0, 0, 1);
+        }
+
+        .conConacre {
+            padding-top: 0.32rem;
+
+            .conLie {
+                .cHeader {
+                    @extend %cen;
+                    margin-bottom: 0.24rem;
+
+                    p {
+                        text-indent: 2em;
+                        font-size  : 0.32rem;
+                        line-height: 0.44rem;
+                        font-family: "黑体";
+                        font-weight: 550;
+                        color      : rgba(0, 0, 0, 1);
+                    }
+                }
+
+                .acBtn {
+                    @extend %cen;
+                    justify-content: center;
+                    margin-bottom  : 0.48rem;
+                    margin-top     : 0.38rem;
+
+                    a {
+                        width        : 1.44rem;
+                        font-size    : 0.24rem;
+                        font-family  : PingFangSC;
+                        font-weight  : 400;
+                        color        : rgba(253, 4, 0, 1);
+                        height       : 0.54rem;
+                        background   : rgba(255, 247, 246, 1);
+                        border-radius: 0.02rem;
+                        border       : 0.01rem solid rgba(253, 4, 0, 1);
+                        @extend %cen;
+                        justify-content: center;
+                    }
+
+                    div {
+                        width: 0.48rem;
+                    }
+                }
+
+                .conHeader {
+                    padding-left: 0.64rem;
+                    @extend %cen;
+                    margin-bottom: 0.24rem;
+
+                    img {
+                        width       : 0.23rem;
+                        height      : 0.23rem;
+                        display     : inline-block;
+                        margin-right: 0.1rem;
+                    }
+
+                    span {
+                        font-size  : 0.32rem;
+                        font-family: "黑体";
+                        font-weight: 550;
+                        color      : rgba(0, 0, 0, 1);
+                    }
+                }
+
+                .lie {
+                    p {
+                        font-size    : 0.32rem;
+                        font-family  : "FZFSK--GBK1";
+                        font-weight  : normal;
+                        text-indent  : 2em;
+                        line-height  : 0.5rem;
+                        margin-bottom: 0.24rem;
+
+                        a {
+                            color: rgba(0, 0, 0, 1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            border-top: 0.03rem solid rgba(48, 49, 51, 1);
+            padding   : 0 0.33rem;
+            @extend %cen;
+            justify-content: space-between;
+            height         : 0.62rem;
+            box-sizing     : border-box;
+
+            .lie {
+                @extend %cen;
+                font-size  : 0.28rem;
+                font-family: "FZFSK--GBK1";
+                font-weight: normal;
+                color      : rgba(0, 0, 0, 1);
+
+                .right {
+                    padding-left: 0.1rem;
+                }
+            }
+
+        }
+    }
+
+}

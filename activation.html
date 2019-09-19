@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账户激活</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div id="activation">
+        <header>
+            <div>
+                欢迎使用本系统<br />
+                请激活您的账户
+            </div>
+        </header>
+        <div class="section">
+            <div class="ipt">
+                <div class="top">用户激活码</div>
+                <div class="btm userActivaion">
+                    <input type="text"   oninput="this.value=this.value.replace(/[^\d]/g,'')" autofocus maxlength="4"
+                        minlength="4">
+                    <div></div>
+                    <input type="text" oninput="this.value=this.value.replace(/[^\d]/g,'')" maxlength="4" minlength="4">
+                    <div></div>
+                    <input type="text" oninput="this.value=this.value.replace(/[^\d]/g,'')" maxlength="4" minlength="4">
+                </div>
+            </div>
+            <div class="ipt">
+                <div class="top">姓名</div>
+                <div class="btm">
+                    <input type="text" placeholder="请输入您的姓名" id="userName">
+                    <span class="iconfont icon-yonghu"></span>
+                </div>
+            </div>
+            <div class="login">
+                激活
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

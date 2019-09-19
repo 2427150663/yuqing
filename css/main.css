@@ -1,0 +1,352 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.rightBtn {
+  width: 0.2rem;
+  height: 0.26rem;
+  display: inline-block;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAACIklEQVQ4T5XUTWgTQRQH8P+b3dZQUUGlehDUQxERCSZbbGOSTcQS8NiWQLWKlF5UxJsXUfYievOi4AeooETQguKhFqx21+yGYNz0lFNERUFQSjEUbaLuPtkkFT+aD99x5v+bnX07s2Sa5qpwOLyA/ywyLPsOM7/Wp4OappHbrifdepkCYwSgqU7hOxgK7ZhvB5ORzo0x0TUAEojeCiEPRfv9+VaYvICenR3ADycFYD3AZRLScTUUuNEMV6FXT638Zol5AmClOkC4/rV7zYn9PT2V5Rb4Bb3JyWJxRdfH0iUA41VLlBMuD0ciyru/8R9wadLI5MfYdS4D5AMwB/CBWLj3ye94WegFnqXtoBCYAPMWAA5AZ9U9gfNExLU3aVKZTGFtxVlMESFRC9Ojbz4+PKAopabQC2sai9g+WyOi08wsQFR0qBJvCWvbzvsF3CkQNgJwSUiRljBt5Q+57F5hoAvAPCQxGusPPG4I7xUKnRs+ly8y87F6G2bJcYZUdfebhs2Zmcluog75PoC+OrrF39cdjce3lpd6+c8TDcvey8x3AXQDqJCgk2ooeLXpAdAt+xSYzwGQwXgvmIej0d4XDY/cZDa7eqXbcZNdHvRCAjTt+HgkrihzjT4zGYa9nSV+AGAbAAbEhU8fXp1JJpNO09uhm7nbAI2CUGIHR+JR5WGru1jtav0PsJNkaVDt21VsB1Xh84ydWFyQzUTC/6Vd5OV+AnNUyAvU9spCAAAAAElFTkSuQmCC) no-repeat center center;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+
+.turn {
+  transition: all 0.3s;
+  transform: rotate(90deg);
+}
+
+@font-face {
+  font-family: "FZXBSJW--GB1";
+  src: url(font/fzcthj.ttf);
+}
+
+@font-face {
+  font-family: "FZFSK--GBK1";
+  src: url(font/GBK.ttf);
+}
+
+#activation header, #activation .section .ipt .userActivaion, #activation .section .activaion div, #list .het, #list .today, .artDetails .today, .artDetails .con .title, .artDetails .con .conConacre .conLie .cHeader, .artDetails .con .conConacre .conLie .acBtn, .artDetails .con .conConacre .conLie .acBtn a, .artDetails .con .conConacre .conLie .conHeader, .artDetails .con .footer, .artDetails .con .footer .lie {
+  display: flex;
+  align-items: center;
+}
+
+#activation, #list, .artDetails {
+  width: 7.5rem;
+  margin: auto;
+}
+
+#activation .section .ipt .top, #activation .section .login {
+  font-weight: 400;
+}
+
+#activation .section .login:hover {
+  filter: brightness(1.1);
+}
+
+.bgwhite {
+  background: white !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#activation {
+  overflow-x: hidden;
+}
+
+#activation header {
+  width: 7.5rem;
+  height: 3.2rem;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% auto;
+  z-index: 100;
+  font-size: 0.4rem;
+  font-weight: 550;
+  color: white;
+  font-family: PingFangSC;
+  justify-content: center;
+  margin-bottom: 0.56rem;
+}
+
+#activation header div {
+  height: 1.12rem;
+  line-height: 0.56rem;
+  letter-spacing: 0.04rem;
+}
+
+#activation .section {
+  padding: 0 0.44rem;
+  width: 7.5rem;
+  box-sizing: border-box;
+}
+
+#activation .section .ipt .top {
+  width: 7.5rem;
+  height: 0.5rem;
+  font-size: 0.24rem;
+  color: #c0c4cc;
+  line-height: 0.5rem;
+  padding-left: 0.16rem;
+}
+
+#activation .section .ipt .btm {
+  width: 6.62rem;
+  height: 0.88rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#activation .section .ipt .btm .prompt {
+  font-size: 0.24rem;
+  color: #f56c6c;
+  padding-left: 0.16rem;
+  line-height: 0.33rem;
+}
+
+#activation .section .ipt .btm input {
+  width: 6.62rem;
+  height: 0.88rem;
+  padding-left: 0.2rem;
+  display: block;
+  border: 0.02rem solid rgba(152, 159, 195, 0.4);
+  outline: none;
+  color: #303132;
+  font-size: 0.3rem;
+  box-sizing: border-box;
+}
+
+#activation .section .ipt .btm input:focus {
+  border: 0.02rem solid #3881ea;
+}
+
+#activation .section .ipt .btm span.iconfont {
+  font-size: 0.24rem;
+  color: #989FC3;
+  position: absolute;
+  top: 0.44rem;
+  left: 0.35rem;
+  transform: translate(-50%, -50%);
+}
+
+#activation .section .ipt .userActivaion input {
+  width: 1.94rem;
+  height: 0.88rem;
+  text-align: center;
+  padding: 0px;
+}
+
+#activation .section .ipt .userActivaion div {
+  width: 0.2rem;
+  height: 0.02rem;
+  background: rgba(152, 159, 195, 0.4);
+  margin: 0 0.1rem;
+}
+
+#activation .section .login {
+  width: 2.88rem;
+  height: 0.88rem;
+  background: linear-gradient(92deg, #ff7c71 0%, #fd0400 100%);
+  border-radius: 0.04rem;
+  margin: auto;
+  font-size: 0.32rem;
+  line-height: 0.88rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 0.12rem;
+}
+
+#activation .section .activaion {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#activation .section .activaion div {
+  width: 2.15rem;
+  height: 0.37rem;
+  margin: auto;
+  justify-content: center;
+  color: #989fc3;
+  font-size: 0.26rem;
+}
+
+#activation .section .activaion a {
+  color: #3881ea;
+}
+
+.borNone {
+  border: 0px !important;
+}
+
+#list {
+  overflow-x: hidden;
+}
+
+#list .pad {
+  padding: 0 0.24rem;
+}
+
+#list #day .dlie:first-child .het {
+  border: 0px;
+}
+
+#list .het {
+  font-size: 0.32rem;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: #333333;
+  height: 0.88rem;
+  justify-content: space-between;
+  border-top: 0.01rem solid #e4e7ed;
+  box-sizing: border-box;
+}
+
+#list .today {
+  font-size: 0.28rem;
+  color: white;
+  background: #fd0400;
+  width: 7.5rem;
+  box-sizing: border-box;
+  padding: 0 0.24rem;
+  height: 0.88rem;
+}
+
+.artDetails {
+  overflow-x: hidden;
+}
+
+.artDetails .today {
+  font-size: 0.28rem;
+  color: white;
+  background: #fd0400;
+  width: 7.5rem;
+  box-sizing: border-box;
+  padding: 0 0.24rem;
+  height: 0.88rem;
+}
+
+.artDetails .con {
+  padding: 0 0.24rem;
+  padding-bottom: 0.2rem;
+}
+
+.artDetails .con h1 {
+  font-size: 1.12rem;
+  line-height: 1.31rem;
+  font-family: "FZXBSJW--GB1";
+  font-weight: normal;
+  color: #fd0400;
+  margin: 0.32rem auto;
+  text-align: center;
+}
+
+.artDetails .con .title {
+  border-bottom: 0.03rem solid #fd0400;
+  font-size: 0.32rem;
+  height: 0.62rem;
+  justify-content: space-between;
+  padding: 0px 0.28rem;
+  font-family: "FZFSK--GBK1";
+  font-weight: normal;
+  color: black;
+}
+
+.artDetails .con .conConacre {
+  padding-top: 0.32rem;
+}
+
+.artDetails .con .conConacre .conLie .cHeader {
+  margin-bottom: 0.24rem;
+}
+
+.artDetails .con .conConacre .conLie .cHeader p {
+  text-indent: 2em;
+  font-size: 0.32rem;
+  line-height: 0.44rem;
+  font-family: "黑体";
+  font-weight: 550;
+  color: black;
+}
+
+.artDetails .con .conConacre .conLie .acBtn {
+  justify-content: center;
+  margin-bottom: 0.48rem;
+  margin-top: 0.38rem;
+}
+
+.artDetails .con .conConacre .conLie .acBtn a {
+  width: 1.44rem;
+  font-size: 0.24rem;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: #fd0400;
+  height: 0.54rem;
+  background: #fff7f6;
+  border-radius: 0.02rem;
+  border: 0.01rem solid #fd0400;
+  justify-content: center;
+}
+
+.artDetails .con .conConacre .conLie .acBtn div {
+  width: 0.48rem;
+}
+
+.artDetails .con .conConacre .conLie .conHeader {
+  padding-left: 0.64rem;
+  margin-bottom: 0.24rem;
+}
+
+.artDetails .con .conConacre .conLie .conHeader img {
+  width: 0.23rem;
+  height: 0.23rem;
+  display: inline-block;
+  margin-right: 0.1rem;
+}
+
+.artDetails .con .conConacre .conLie .conHeader span {
+  font-size: 0.32rem;
+  font-family: "黑体";
+  font-weight: 550;
+  color: black;
+}
+
+.artDetails .con .conConacre .conLie .lie p {
+  font-size: 0.32rem;
+  font-family: "FZFSK--GBK1";
+  font-weight: normal;
+  text-indent: 2em;
+  line-height: 0.5rem;
+  margin-bottom: 0.24rem;
+}
+
+.artDetails .con .conConacre .conLie .lie p a {
+  color: black;
+}
+
+.artDetails .con .footer {
+  border-top: 0.03rem solid #303133;
+  padding: 0 0.33rem;
+  justify-content: space-between;
+  height: 0.62rem;
+  box-sizing: border-box;
+}
+
+.artDetails .con .footer .lie {
+  font-size: 0.28rem;
+  font-family: "FZFSK--GBK1";
+  font-weight: normal;
+  color: black;
+}
+
+.artDetails .con .footer .lie .right {
+  padding-left: 0.1rem;
+}
