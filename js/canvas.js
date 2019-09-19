@@ -1,5 +1,5 @@
 (function () {
-    var watermarkConWP = window.localStorage.getItem("userName");
+    var watermarkConWP = window.localStorage.getItem("KnUserName");
     var a = {
         watermarkConWP: watermarkConWP,
         markFontSizeWP: "20px",

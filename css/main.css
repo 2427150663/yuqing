@@ -31,12 +31,12 @@
   src: url(font/GBK.ttf);
 }
 
-#activation header, #activation .section .ipt .userActivaion, #activation .section .activaion div, #list .het, #list .today, .artDetails .today, .artDetails .con .title, .artDetails .con .conConacre .conLie .cHeader, .artDetails .con .conConacre .conLie .acBtn, .artDetails .con .conConacre .conLie .acBtn a, .artDetails .con .conConacre .conLie .conHeader, .artDetails .con .footer, .artDetails .con .footer .lie {
+#activation header, #activation .section .ipt .userActivaion, #activation .section .activaion div, #index .het, #index .today, .artDetails .today, .artDetails .con .title, .artDetails .con .conConacre .conLie .cHeader, .artDetails .con .conConacre .conLie .acBtn, .artDetails .con .conConacre .conLie .acBtn a, .artDetails .con .conConacre .conLie .conHeader, .artDetails .con .footer, .artDetails .con .footer .lie {
   display: flex;
   align-items: center;
 }
 
-#activation, #list, .artDetails {
+#activation, #index, .artDetails {
   width: 7.5rem;
   margin: auto;
 }
@@ -187,19 +187,19 @@
   border: 0px !important;
 }
 
-#list {
+#index {
   overflow-x: hidden;
 }
 
-#list .pad {
+#index .pad {
   padding: 0 0.24rem;
 }
 
-#list #day .dlie:first-child .het {
+#index #day .dlie:first-child .het {
   border: 0px;
 }
 
-#list .het {
+#index .het {
   font-size: 0.32rem;
   font-family: PingFangSC;
   font-weight: 400;
@@ -210,7 +210,7 @@
   box-sizing: border-box;
 }
 
-#list .today {
+#index .today {
   font-size: 0.28rem;
   color: white;
   background: #fd0400;

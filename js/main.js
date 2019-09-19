@@ -27,6 +27,12 @@ let $ = function (sel) {
     }
     return document.querySelector(sel);
 };
+function validation() {
+    if (!window.localStorage.getItem("KnUserName")) {
+        window.location.href = "activation.html";
+        return;
+    }
+}
 
 //账户激活
 class activation {
@@ -75,19 +81,19 @@ class activation {
             alert("请输入姓名!");
             return
         }
-        window.localStorage.setItem("userName", user);
-        window.location.href = "list.html";
+        window.localStorage.setItem("KnUserName", user);
+        window.location.href = "index.html";
     }
 }
-
 //每日舆情列表入口
-class list {
+class indexlist {
     constructor() {
         //列表
-        this.optList = $("#list");
+        this.optList = $("#index");
     }
     init() {
         if (this.optList) {
+            validation();
             this.bindEvent();
         }
     }
@@ -117,9 +123,35 @@ class list {
         }
     }
 }
+//文章分类
+class article {
+    constructor() {
+        this.article = $("#article");
+    }
+    init() {
+        if (this.article) {
+            validation();
+        }
+    }
+}
+//文章详情
+class details {
+    constructor() {
+        this.details = $("#details");
+    }
+    init() {
+        if (this.details) {
+            validation();
+        }
+    }
+}
 window.onload = function () {
     //账户激活
     new activation().init();
     //每日网络舆情列表
-    new list().init();
+    new indexlist().init();
+    //分类
+    new article().init();
+    //详情
+    new details().init();
 }

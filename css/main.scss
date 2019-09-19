@@ -202,7 +202,7 @@
     border: 0px !important;
 }
 
-#list {
+#index {
     @extend %remCon;
     overflow-x: hidden;
 
@@ -225,7 +225,7 @@
         @extend %cen;
         justify-content: space-between;
         border-top     : 0.01rem solid rgba(228, 231, 237, 1);
-        box-sizing : border-box;
+        box-sizing     : border-box;
     }
 
     .today {
