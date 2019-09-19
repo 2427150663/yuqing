@@ -320,6 +320,7 @@ html,body{
                         border       : 0.01rem solid rgba(253, 4, 0, 1);
                         @extend %cen;
                         justify-content: center;
+                        box-sizing: border-box;
                     }
 
                     div {

@@ -301,6 +301,7 @@ html, body {
   border-radius: 0.02rem;
   border: 0.01rem solid #fd0400;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .artDetails .con .conConacre .conLie .acBtn div {
